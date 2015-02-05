@@ -11,6 +11,11 @@ require.config({
         bootstrap: '//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.2/js/bootstrap.min',
         backbone: '//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min',
         marionette: '//cdnjs.cloudflare.com/ajax/libs/backbone.marionette/2.3.1/backbone.marionette.min'
+    },
+    shim: {
+        bootstrap: {
+            deps: ['$']
+        }
     }
 });
 
