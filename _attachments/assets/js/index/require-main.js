@@ -2,10 +2,10 @@
  * Raghav Sidhanti
  * 2/4/15
  */
-require(['require', '../common-main'], function (require) {
+require(['../common-require-main'], function () {
     'use strict';
 
-    require(['index/router'], function (Router) {
+    require(['router'], function (Router) {
 
         app.on('before:start', function (options) {
            new Router();

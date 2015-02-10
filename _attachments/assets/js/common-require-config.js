@@ -1,10 +1,8 @@
 /**
  * Raghav Sidhanti
- * 2/4/15
+ * 2/10/15
  */
-
-require.config({
-    baseUrl: 'assets/js',
+var require = {
     paths: {
         $: '//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min',
         _: '//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min',
@@ -24,18 +22,4 @@ require.config({
             deps: ['backbone']
         }
     }
-});
-
-require(['backbone', 'marionette'], function (Backbone, Marionette) {
-    'use strict';
-
-    require(['bootstrap']);
-
-    var app = new Marionette.Application();
-
-    app.on('start', function (options) {
-        Backbone.history.start();
-    })
-
-    window.app = app;
-});
+};

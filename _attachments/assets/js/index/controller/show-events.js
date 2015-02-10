@@ -3,7 +3,7 @@
  * 2/9/15
  */
 
-define(['index/model', 'index/view/event-layout', 'index/view/event-table'], function (Model, EventLayoutView, EventTableView) {
+define(['model', 'view/event-layout', 'view/event-table'], function (Model, EventLayoutView, EventTableView) {
     'use strict';
 
     return function () {
