@@ -2,8 +2,10 @@
  * Raghav Sidhanti
  * 2/4/15
  */
-require(['../common-require-main'], function () {
+require(['../common-require-main'], function (Common) {
     'use strict';
+
+    var app = Common.app;
 
     require(['router'], function (Router) {
 
