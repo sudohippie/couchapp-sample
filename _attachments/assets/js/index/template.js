@@ -2,12 +2,12 @@
  * Raghav Sidhanti
  * 2/9/15
  */
-define(['text!index/html/event-table.html', 'text!index/html/event-table-row.html'], function (EventTable, EventTableRow) {
+define(function (require) {
     var Obj = {};
 
     Obj.table = {};
-    Obj.table.event = EventTable;
-    Obj.table.eventRow = EventTableRow;
+    Obj.table.event = require('text!index/html/event-table.html');
+    Obj.table.eventRow = require('text!index/html/event-table-row.html');
 
     return Obj;
 })
