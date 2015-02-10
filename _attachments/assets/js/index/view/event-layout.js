@@ -2,16 +2,16 @@
  * Raghav Sidhanti
  * 2/10/15
  */
-define(['marionette', 'index/template'], function (Marionette, Tpl) {
+define(['marionette', 'text!./html/event-layout.html'], function (Marionette, layoutTpl) {
     'use strict';
 
-    var MainLayoutView = Marionette.LayoutView.extend({
+    var LayoutView = Marionette.LayoutView.extend({
         el: '#main-container',
-        template: Tpl.layout.event,
+        template: layoutTpl,
         regions: {
             events: '#events'
         }
     });
 
-    return MainLayoutView;
+    return LayoutView;
 });

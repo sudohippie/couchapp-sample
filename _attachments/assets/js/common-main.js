@@ -26,8 +26,7 @@ require.config({
     }
 });
 
-
-require(['require', 'backbone', 'marionette'], function (require, Backbone, Marionette) {
+require(['backbone', 'marionette'], function (Backbone, Marionette) {
     'use strict';
 
     require(['bootstrap']);

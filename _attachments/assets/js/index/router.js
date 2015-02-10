@@ -2,12 +2,8 @@
  * Raghav Sidhanti
  * 2/9/15
  */
-define(['marionette', 'index/controller/show-events'], function (Marionette, ShowEventsController) {
+define(['marionette', './controller/handler'], function (Marionette, Controller) {
     'use strict'
-
-    var Controller = {
-        showEvents: ShowEventsController
-    };
 
     var Router = Marionette.AppRouter.extend({
         controller: Controller,
