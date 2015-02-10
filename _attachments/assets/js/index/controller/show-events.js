@@ -3,7 +3,7 @@
  * 2/9/15
  */
 
-define(['model', 'view/event-layout', 'view/event-table'], function (Model, EventLayoutView, EventTableView) {
+define(['model/event', 'view/event-layout', 'view/event-table'], function (EventModel, EventLayoutView, EventTableView) {
     'use strict';
 
     return function () {
@@ -13,7 +13,7 @@ define(['model', 'view/event-layout', 'view/event-table'], function (Model, Even
 
         // create instance of the view
         var eventTableView = new EventTableView({
-            collection: new Model.EventList([
+            collection: new EventModel.MotionList([
                 {id: 1, name: 'event 1', createDate: '2015-02-09 16:33:10'},
                 {id: 2, name: 'event 2', createDate: '2015-02-09 16:41:22'},
                 {id: 3, name: 'event 3', createDate: '2015-02-09 17:20:15'},
