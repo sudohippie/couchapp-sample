@@ -2,13 +2,11 @@
  * Raghav Sidhanti
  * 2/4/15
  */
-require(['../common-main'], function (Common) {
-    require(['index/router'], function (Router) {
-        app.addRegions({
-            mainContainer: '#main-container'
-        });
+require(['require', '../common-main'], function (require) {
 
-        app.addInitializer(function (options) {
+    require(['index/router'], function (Router) {
+
+        app.on('before:start', function (options) {
            new Router();
         });
 

@@ -26,10 +26,11 @@ require.config({
     }
 });
 
-require(['bootstrap']);
 
-define(['backbone', 'marionette'], function (Backbone, Marionette) {
+require(['require', 'backbone', 'marionette'], function (require, Backbone, Marionette) {
     'use strict';
+
+    require(['bootstrap']);
 
     var app = new Marionette.Application();
 
@@ -37,6 +38,5 @@ define(['backbone', 'marionette'], function (Backbone, Marionette) {
         Backbone.history.start();
     })
 
-    return window.app = app;
-
+    window.app = app;
 });

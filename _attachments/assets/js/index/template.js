@@ -9,5 +9,8 @@ define(function (require) {
     Obj.table.event = require('text!index/view/html/event-table.html');
     Obj.table.eventRow = require('text!index/view/html/event-table-row.html');
 
+    Obj.layout = {};
+    Obj.layout.event = require('text!index/view/html/event-layout.html');
+
     return Obj;
 })
