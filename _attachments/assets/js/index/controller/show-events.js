@@ -4,6 +4,8 @@
  */
 
 define(['index/model', 'index/view/event-layout', 'index/view/event-table'], function (Model, EventLayoutView, EventTableView) {
+    'use strict';
+
     return function () {
         //  render the layout
         var eventLayoutView = new EventLayoutView();

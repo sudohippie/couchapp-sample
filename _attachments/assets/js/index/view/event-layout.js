@@ -3,6 +3,7 @@
  * 2/10/15
  */
 define(['marionette', 'index/template'], function (Marionette, Tpl) {
+    'use strict';
 
     var MainLayoutView = Marionette.LayoutView.extend({
         el: '#main-container',

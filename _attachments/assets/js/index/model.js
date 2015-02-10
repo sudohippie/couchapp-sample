@@ -3,6 +3,8 @@
  * 2/9/15
  */
 define(['backbone'], function (Backbone) {
+    'use strict';
+
     var Obj = {};
 
     Obj.Event = Backbone.Model.extend({

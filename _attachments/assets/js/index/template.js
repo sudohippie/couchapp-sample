@@ -3,6 +3,8 @@
  * 2/9/15
  */
 define(function (require) {
+    'use strict';
+
     var Obj = {};
 
     Obj.table = {};

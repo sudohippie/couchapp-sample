@@ -3,6 +3,8 @@
  * 2/9/15
  */
 define(['marionette', 'index/template'], function (Marionette, Tpl) {
+    'use strict';
+
     // define item view
     var EventTableRowView = Marionette.ItemView.extend({
         template: Tpl.table.eventRow,

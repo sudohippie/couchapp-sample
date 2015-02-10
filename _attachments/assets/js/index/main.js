@@ -3,6 +3,7 @@
  * 2/4/15
  */
 require(['require', '../common-main'], function (require) {
+    'use strict';
 
     require(['index/router'], function (Router) {
 

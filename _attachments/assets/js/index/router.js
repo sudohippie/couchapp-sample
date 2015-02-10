@@ -3,6 +3,7 @@
  * 2/9/15
  */
 define(['marionette', 'index/controller/show-events'], function (Marionette, ShowEventsController) {
+    'use strict'
 
     var Controller = {
         showEvents: ShowEventsController
