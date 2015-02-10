@@ -17,8 +17,11 @@ require.config({
         bootstrap: {
             deps: ['$']
         },
+        backbone: {
+            deps: ['$', '_']
+        },
         marionette: {
-            deps: ['_', '$']
+            deps: ['backbone']
         }
     }
 });
