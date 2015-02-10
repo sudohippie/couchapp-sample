@@ -28,12 +28,15 @@ require.config({
 
 require(['bootstrap']);
 
-define(['marionette'], function (Marionette) {
+define(['backbone', 'marionette'], function (Backbone, Marionette) {
     'use strict';
 
-    var obj = {};
+    var app = new Marionette.Application();
 
-    obj.app = new Marionette.Application();
+    app.on('start', function (options) {
+        Backbone.history.start();
+    })
 
-    return  obj;
+    return window.app = app;
+
 });
