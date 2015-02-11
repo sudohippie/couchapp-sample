@@ -10,7 +10,7 @@ var require = {
         backbone: '//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min',
         marionette: '//cdnjs.cloudflare.com/ajax/libs/backbone.marionette/2.3.1/backbone.marionette.min',
         text: '//cdnjs.cloudflare.com/ajax/libs/require-text/2.0.12/text',
-        couchdb_conn: '../../vendor/backbone-couchdb',
+        couchdb_conn: '../_vendor/backbone-couchdb',
         $couch: '/_utils/script/jquery.couch',
         sha1: '/_utils/script/sha1',
         json2: '/_utils/script/json2',
