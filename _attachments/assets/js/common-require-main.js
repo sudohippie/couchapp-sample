@@ -6,6 +6,7 @@ define(['backbone', 'marionette'], function (Backbone, Marionette) {
     'use strict';
 
     require(['bootstrap']);
+    require(['db']);
 
     var Obj = {};
 
