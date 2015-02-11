@@ -12,8 +12,6 @@ var require = {
         text: '//cdnjs.cloudflare.com/ajax/libs/require-text/2.0.12/text',
         couchdb_conn: '../_vendor/backbone-couchdb',
         $couch: '/_utils/script/jquery.couch',
-        sha1: '/_utils/script/sha1',
-        json2: '/_utils/script/json2',
         db: '../db'
     },
     shim: {
@@ -24,7 +22,7 @@ var require = {
             deps: ['$']
         },
         backbone: {
-            deps: ['$', '_']
+            deps: ['$']
         },
         marionette: {
             deps: ['backbone']
@@ -33,7 +31,7 @@ var require = {
             deps: ['$']
         },
         couchdb_conn: {
-            deps: ['backbone', '$couch', 'sha1', 'json2']
+            deps: ['backbone', '$couch']
         }
     }
 };
