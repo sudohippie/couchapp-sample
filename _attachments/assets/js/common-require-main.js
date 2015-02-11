@@ -2,11 +2,12 @@
  * Raghav Sidhanti
  * 2/4/15
  */
+require(['db']);
+
 define(['backbone', 'marionette'], function (Backbone, Marionette) {
     'use strict';
 
     require(['bootstrap']);
-    require(['db']);
 
     var Obj = {};
 

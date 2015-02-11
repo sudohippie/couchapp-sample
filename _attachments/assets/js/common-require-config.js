@@ -11,9 +11,15 @@ var require = {
         marionette: '//cdnjs.cloudflare.com/ajax/libs/backbone.marionette/2.3.1/backbone.marionette.min',
         text: '//cdnjs.cloudflare.com/ajax/libs/require-text/2.0.12/text',
         couchdb_conn: '../../vendor/backbone-couchdb',
+        $couch: '/_utils/script/jquery.couch',
+        sha1: '/_utils/script/sha1',
+        json2: '/_utils/script/json2',
         db: '../db'
     },
     shim: {
+        $: {
+            deps: ['_']
+        },
         bootstrap: {
             deps: ['$']
         },
@@ -23,8 +29,11 @@ var require = {
         marionette: {
             deps: ['backbone']
         },
+        $couch: {
+            deps: ['$']
+        },
         couchdb_conn: {
-            deps: ['$', '_', 'backbone']
+            deps: ['backbone', '$couch', 'sha1', 'json2']
         }
     }
 };

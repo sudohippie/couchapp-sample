@@ -8,6 +8,7 @@ define(['backbone'], function (Backbone) {
     var Obj = {};
 
     Obj.Motion = Backbone.Model.extend({
+        url: '/movement',
         defaults: {
             name: null,
             createDate: null
@@ -15,6 +16,7 @@ define(['backbone'], function (Backbone) {
     });
 
     Obj.MotionList = Backbone.Collection.extend({
+        url: '/movements',
         model: Obj.Motion
     });
 
